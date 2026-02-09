@@ -1,0 +1,5 @@
+dist/
+ezcap_bot.spec
+venv/
+build/
+input/
