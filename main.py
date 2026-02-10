@@ -2,6 +2,7 @@ import os
 import sys
 from browser import open_chrome
 from excel_reader import read_profiles_from_excel
+from login import login
 
 
 def main():
@@ -59,6 +60,8 @@ def main():
         url=EZCAP_URL,
         chromedriver_path=CHROMEDRIVER_PATH
     )
+
+    login(driver)
     
     input("Presiona ENTER para cerrar el navegador y salir...")
     driver.quit()
